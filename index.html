@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Turn-Based RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Simple RPG Battle</h1>
+    
+    <div class="battle-screen">
+      <!-- Player Stats -->
+      <div class="player">
+        <h2>Hero</h2>
+        <p>HP: <span id="playerHP">100</span></p>
+        <p>Attack: <span id="playerAttack">10</span></p>
+      </div>
+
+      <!-- Enemy Stats -->
+      <div class="enemy">
+        <h2>Monster</h2>
+        <p>HP: <span id="enemyHP">50</span></p>
+        <p>Attack: <span id="enemyAttack">5</span></p>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="actions">
+      <button onclick="playerAttack()">Attack</button>
+      <button onclick="playerHeal()">Heal</button>
+      <button onclick="specialMove()">Special</button>
+    </div>
+
+    <!-- Battle Log -->
+    <div class="log" id="battleLog">
+      <p>A wild monster appears!</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
